@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Register Form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="form">
+                   <div class="login">
+                    <div class="login-form">
+                        <h1> Loing Form</h1>
+                    </div>
+                    <div class="forms">
+                        <input type="text" name="" id="" placeholder="  Email or Username" icon="fa-regular fa-envelope" style="font-size: 12px;"><i class="fa-regular fa-envelope"></i>
+                        <input  type="password" name="" id="demo" placeholder="  Password" style="font-size: 12px;"><i class="fa-solid fa-lock" onclick="myFunction() , change()"></i>
+                        <div class="btn">
+                            <button type="button">Sign in</button>
+                            <p>Forgot Password</p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+ <script>
+   function change(){
+    document.getElementById("demo").innerHTML="fa-solid fa-unlock" + "block";
+   }
+
+         function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+ </script>
+</html>
